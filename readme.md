@@ -2,7 +2,7 @@
 
 ## Build the Docker Image
 
-```bash
+```sh
 docker build -t image-name:dev .
 ```
 
