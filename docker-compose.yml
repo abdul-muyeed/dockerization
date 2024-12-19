@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  react:
+    container_name: react
+    build:
+      context: .
+      dockerfile: Dockerfile.react
+    volumes:
+      - ./react:/app
+    ports:
+      - "3000:3000"
+    networks:
+      - app-network
+  express:
